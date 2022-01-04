@@ -40,7 +40,7 @@ app.get('/api/fetchAll', (_req, _res) => {
 });
 
 // Get port from env variable else set it to 4000
-const port = process.env.PORT || 4000;
+const port = process.env.PORT;
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));
 
