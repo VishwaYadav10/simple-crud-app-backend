@@ -9,7 +9,7 @@ class DBUtilities {
 
     async getConnection(_host, _user, _password, _database) {
         try {
-            const connection = await mysql.createConnection({
+            const connection = await mysql.createPool({
                 host: _host,
                 user: _user,
                 password: _password,
