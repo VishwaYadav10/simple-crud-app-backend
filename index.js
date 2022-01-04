@@ -50,7 +50,7 @@ app.listen(port, () => console.log(`Listening on port ${port}...`));
 // Test
 // dbutils.findByField(connection, 'genre', 'Thriller', 'movie_genre', (_result) => {
 //     // result = _result;
-//     logger.info('movie_genre table findByField call with field as {}, value as {} and Result as {}', 'genre', 'Thriller', _result);
+//     console.info('movie_genre table findByField call with field as {}, value as {} and Result as {}', 'genre', 'Thriller', _result);
 // });
 
 // (async () => {
@@ -58,33 +58,33 @@ app.listen(port, () => console.log(`Listening on port ${port}...`));
 //     connection.connect(
 //         (_error) => {
 //             if (_error) logger.error('Exception occured while getting connection from DB', _error);
-//             else logger.info('Connected with DB {} successfully...', _Constants.DB_NAME);
+//             else console.info('Connected with DB {} successfully...', _Constants.DB_NAME);
 //         }
 //     );
 //     // dbutils.findById(connection, 1, 'movie_genre', (_result) => {
-//     //     logger.info('movie_genre table findById call with id {} and Result {}', 1, _result);
+//     //     console.info('movie_genre table findById call with id {} and Result {}', 1, _result);
 //     // });
 //     // dbutils.findByField(connection, 'genre', 'Thriller', 'movie_genre', (_result) => {
-//     //     logger.info('movie_genre table findByField call with field as {}, value as {} and Result as {}', 'genre', 'Thriller', _result);
+//     //     console.info('movie_genre table findByField call with field as {}, value as {} and Result as {}', 'genre', 'Thriller', _result);
 //     // });
 //     // dbutils.findAll(connection, 'movie_genre', (_result) => {
-//     //     logger.info('movie_genre table findAll call Result {}', _result)
+//     //     console.info('movie_genre table findAll call Result {}', _result)
 //     // });
 //     try {
 //         dbutils.save(connection, { 'genre': 'Thriller' }, 'movie_genre', (_result) => {
-//             logger.info('movie_genre save successful with Result as {}', _result);
+//             console.info('movie_genre save successful with Result as {}', _result);
 //         });
 //     }
 //     catch (e) {
 //         logger.error('Exception occured while saving data to movie_genre', e);
 //     }
 //     // dbutils.deleteById(connection, 6, 'movie_genre', (_result) => {
-//     //     logger.info('movie_genre data deleteById call with id as {} and Result is {}', 6, _result);
+//     //     console.info('movie_genre data deleteById call with id as {} and Result is {}', 6, _result);
 //     // });
 //     // dbutils.deleteAll(connection, 'movie_genre', (_result) => {
-//     //     logger.info('movie_genre deleteAll call Result {}', _result);
+//     //     console.info('movie_genre deleteAll call Result {}', _result);
 //     // });
 //     // dbutils.truncate(connection, 'movie_genre', (_result) => {
-//     //     logger.info('movie_genre truncate call Result {}', _result);
+//     //     console.info('movie_genre truncate call Result {}', _result);
 //     // });
 // })()
