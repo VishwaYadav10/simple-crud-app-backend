@@ -27,6 +27,9 @@ dbutils.getConnection(Constants.HOST, Constants.USER, Constants.PASSWORD, Consta
         logger.error('Exception occured while fetching MYSQL connection', e);
     });
 
+app.get('/', (_req, _res) => {
+    _res.send({ "msg": 'Server Up' });
+});
 app.post('/api/loginUser', jsonParser, (_req, _res) => {
     // _res.set('Access-Control-Allow-Origin', '*');
     console.info(_req.body.username);
